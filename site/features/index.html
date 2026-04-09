@@ -1,0 +1,2445 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A new project generated from the default template project.">
+      
+      
+        <meta name="author" content="<your name here>">
+      
+      
+      
+        <link rel="prev" href="../releases/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.32">
+    
+    
+      
+        <title>Features - Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.53a7feaf.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#movement" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installing HyperMenu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HyperMenu Releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HyperMenu Features
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HyperMenu Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Movement ↔️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Movement ↔️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teleport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teleport
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ESP 👁️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ESP 👁️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles 🎭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roles 🎭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impostor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impostor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shapeshifter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shapeshifter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crewmate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crewmate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scientist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detective
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ship 🚀
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ship 🚀">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sabotage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sabotage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chat 💬
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat 💬">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Textbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animations 📽️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Animations 📽️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client-Side
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#host-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host-Only 🔐
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Host-Only 🔐">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#murder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Murder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meetings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meetings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passive 💤
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes 💿
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config 📃
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings ⚙️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings ⚙️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gui-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GUI Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spoofing-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spoofing Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privacy Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config File
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-relevant-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other relevant features
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Movement ↔️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Movement ↔️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teleport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teleport
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ESP 👁️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ESP 👁️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles 🎭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roles 🎭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impostor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impostor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shapeshifter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shapeshifter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crewmate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crewmate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Engineer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scientist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detective
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ship 🚀
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ship 🚀">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sabotage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sabotage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chat 💬
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat 💬">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Textbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animations 📽️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Animations 📽️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client-Side
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#host-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host-Only 🔐
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Host-Only 🔐">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#murder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Murder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meetings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meetings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passive 💤
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes 💿
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config 📃
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings ⚙️
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings ⚙️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gui-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GUI Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spoofing-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spoofing Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privacy Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config File
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-relevant-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other relevant features
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <h1 id="__skip">Features</h1>
+
+<h2 id="movement">Movement ↔️<a class="headerlink" href="#movement" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fake Revive</td>
+<td>Allows you to walk through walls like a ghost</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>NoClip</td>
+<td>Allows you to walk through walls like a ghost</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Invert Controls</td>
+<td>Inverts movement from WASD keys / controller.</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Allows you to adjust player / ghost speed</td>
+<td>Slider</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="teleport">Teleport<a class="headerlink" href="#teleport" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to Cursor</td>
+<td>Teleport by right-clicking with your cursor. Works best with the ZoomOut cheat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>to Player</td>
+<td>Teleport to a player's position by selecting them</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="esp">ESP 👁️<a class="headerlink" href="#esp" title="Permanent link">&para;</a></h2>
+<p>HyperMenu's ESP cheats are completely client-side, and thus undetectable by anticheat</p>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>See Player Info</td>
+<td>See level, platform, and host status for all players through their nametag</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>See Roles</td>
+<td>See every player's role through their nametag</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>See Ghosts</td>
+<td>Allows you to see ghosts, protections, and ghost chat even if you are alive</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Shadows</td>
+<td>Removes all shadows, allowing you to see during blackouts and even through walls<br>Also, lets you see through spore clouds in the Fungle Jungle</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Reveal Votes</td>
+<td>Reveals votes as they are being cast rather than at the end of the meeting<br>Also, lets you see colored votes even if votes are set to anonymous</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>See Lobby Info</td>
+<td>?</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="camera">Camera<a class="headerlink" href="#camera" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zoom Out</td>
+<td>Allows you to zoom-out the player's camera using your mouse's scrollwheel</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Spectate</td>
+<td>Allows you to pick a player to spectate with your camera</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Freecam</td>
+<td>Allows you to freely move your camera around without also moving your player</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tracers">Tracers<a class="headerlink" href="#tracers" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crewmates</td>
+<td>Shows tracer lines for alive crewmates (color: cyan)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Impostors</td>
+<td>Shows tracer lines for alive impostors (color: red)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Ghosts</td>
+<td>Shows tracer lines for ghosts (color: white)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Dead Bodies</td>
+<td>Shows tracer lines for dead bodies on the ground (color: yellow)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Color-based</td>
+<td>Changes the color of tracer lines to the color of their players</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Distance-based</td>
+<td>Changes the color of tracer lines based on the distance of their players</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="minimap">Minimap<a class="headerlink" href="#minimap" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crewmates</td>
+<td>Changes the map so that it shows the position of every alive crewmate (color: cyan)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Impostors</td>
+<td>Changes the map so that it shows the position of every alive impostor (color: red)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Ghosts</td>
+<td>Changes the map so that it shows the position of every ghost (color: white)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Color-based</td>
+<td>Changes the color of map icons to the color of their players</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="roles">Roles 🎭<a class="headerlink" href="#roles" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set Fake Role</td>
+<td>Change your current role to any role you want<br>(Shapeshifter &amp; Phantom are disabled by default to prevent getting detected by the anticheat)</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="impostor">Impostor<a class="headerlink" href="#impostor" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kill Reach</td>
+<td>Allows you to kill players regardless of how far they are on the map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="shapeshifter">Shapeshifter<a class="headerlink" href="#shapeshifter" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Ss Animation</td>
+<td>Removes the shapeshift animation, making shapeshifting much quicker</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Endless Ss Duration</td>
+<td>Allows you to remain shapeshifted forever</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="crewmate">Crewmate<a class="headerlink" href="#crewmate" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show Tasks Menu</td>
+<td>Show menu to complete tasks and see other players' tasks</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="tracker">Tracker<a class="headerlink" href="#tracker" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endless Tracking</td>
+<td>Allows you to track another player forever</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Track Delay</td>
+<td>Removes the short delay between the tracked player and their icon on your tracker map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Track Cooldown</td>
+<td>Removes the cooldown period after tracking someone</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Track Reach</td>
+<td>Allows you to track players regardless of how far they are on the map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="engineer">Engineer<a class="headerlink" href="#engineer" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endless Vent Time</td>
+<td>Allows you to remain inside a vent forever despite being an engineer</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Vent Cooldown</td>
+<td>Removes the cooldown period after coming out of a vent</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="scientist">Scientist<a class="headerlink" href="#scientist" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endless Battery</td>
+<td>The battery on your vitals panel will never run out</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Vitals Cooldown</td>
+<td>Removes the cooldown period after closing vitals panel</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="detective">Detective<a class="headerlink" href="#detective" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interrogate Reach</td>
+<td>Allows you to interrogate players regardless of how far they are on the map</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ship">Ship 🚀<a class="headerlink" href="#ship" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fake Tasks</td>
+<td>Allow user to do literally any task</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Unfixable Lights</td>
+<td>Disables lights completely (they cannot be fixed manually by players)<br>You can enable them again by clicking the button</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Call Meeting</td>
+<td>Call an emergency meeting</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Report Body</td>
+<td>Report any player as a dead body to start a meeting</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Close Meeting</td>
+<td>Forcefully closes the meeting window (only for you), allowing you to move and interact with the game during meetings</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Auto open doors on use</td>
+<td>Automatically open doors when clicked</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kick offensive names</td>
+<td>Automatically kick people with offensive names (and auser)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sabotage">Sabotage<a class="headerlink" href="#sabotage" title="Permanent link">&para;</a></h4>
+<p>HyperMenu's Sabotage cheats work even if you aren't impostor and are subject to no cooldown.</p>
+<p>Moreover, different sabotages can be enabled at the same time, and they even work during meetings.</p>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reactor</td>
+<td>Allows you to enable/disable Reactor sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Oxygen</td>
+<td>Allows you to enable/disable Oxygen sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Lights</td>
+<td>Allows you to enable/disable Lights sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Comms</td>
+<td>Allows you to enable/disable Communications sabotage</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Doors</td>
+<td>Opens a menu which allows you to open/close doors individually</td>
+<td>Button</td>
+</tr>
+<tr>
+<td>Mushroom Mixup</td>
+<td>Induces Mushroom Mixup sabotage on Fungle map</td>
+<td>Button</td>
+</tr>
+<tr>
+<td>Trigger Spores</td>
+<td>Induces spores on Fungle map</td>
+<td>Button</td>
+</tr>
+<tr>
+<td>Open Sabotage Map</td>
+<td>Opens sabotage map as if you are the Impostor</td>
+<td>Button</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vents">Vents<a class="headerlink" href="#vents" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unlock Vents</td>
+<td>Allows you to use vents even if you are not an impostor or an engineer</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kick All from Vents</td>
+<td>Forcefully kicks all players from vents</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Walk in Vents</td>
+<td>Allows you to move and interact with the game even though you are inside of a vent<br>This gives you a sort of invisibility until you disable the setting and leave the vent<br>(<em>Some activites such as killing will forcefully make you visible again</em>)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chat">Chat 💬<a class="headerlink" href="#chat" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable Chat</td>
+<td>Allow chat at all times during the game (example: alive outside meeting)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Bypass URL Block</td>
+<td>Allow users to put URLs in the chat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Lower rate limits</td>
+<td>Lower the cooldown on chat messages</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="textbox">Textbox<a class="headerlink" href="#textbox" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unlock Extra Characters</td>
+<td>Allow typing symbols that the chat usually blocks</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Allow longer messages</td>
+<td>Increase character limit in message from 100 to 120</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Unlock Clipboard</td>
+<td>Allow Copy &amp; Paste in the chat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="animations">Animations 📽️<a class="headerlink" href="#animations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shields</td>
+<td>Trigger shields animation</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Asteroids</td>
+<td>Toggle asteroids animation</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Empty Garbage</td>
+<td>Trigger empty garbage animation</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Medbay Scan</td>
+<td>Toggle medbay animation</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Cams In Use</td>
+<td>Toggle faking cameras in use</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="client-side">Client-Side<a class="headerlink" href="#client-side" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moonwalk</td>
+<td>Toggle client-sided moonwalk animation</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="host-only">Host-Only 🔐<a class="headerlink" href="#host-only" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bypass Host Only ⚠️</td>
+<td>Allow using host-only features as non-host (WARNING: this will get you kicked by anticheat. Use at your own risk.)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kill while Vanished</td>
+<td>Allows you to kill as phantom while vanished</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Kill Anyone</td>
+<td>Allows you to kill anyone (even other impostors)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>No Kill Cooldown</td>
+<td>Removes kill cooldown</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Show Protect Menu</td>
+<td>Show a menu to protect other players</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="murder">Murder<a class="headerlink" href="#murder" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kill Player</td>
+<td>Select a player to kill them immediatly</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Telekill Player</td>
+<td>Select a player to teleport to them then kill them</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Kill All Crewmates</td>
+<td>Kill all crewmates immediatly</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Kill All Impostors</td>
+<td>Kill all impostors immediatly</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Kill Everyone</td>
+<td>Kill all players immediatly</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="game-state">Game State<a class="headerlink" href="#game-state" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Force Start Game</td>
+<td>Force game to immediately start</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>No Game End</td>
+<td>Prevent game from ending</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="meetings">Meetings<a class="headerlink" href="#meetings" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skip Meeting</td>
+<td>End meeting and eject no one due to tie</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Vote Immune</td>
+<td>Prevent yourself from being voted out</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Eject Player</td>
+<td>Select a player to be ejected, this player will be voted out.</td>
+<td>Menu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="passive">Passive 💤<a class="headerlink" href="#passive" title="Permanent link">&para;</a></h2>
+<p>These cheats are constantly running in the background and <strong>cannot be disabled to avoid problems.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free Cosmetics</td>
+<td>Gives you access to all of the game's cosmetics for free, including:<br><br>- Hats<br>- Visors<br>- Skins<br>- Pets<br>- Nameplates<br>- Bundles<br>- Cosmicubes</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Avoid Penalties</td>
+<td>Removes the penalty you receive when disconnecting from games early</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Unlock Extra Features</td>
+<td>Unlocks many of the game's special features automatically, including:<br><br>- Freechat<br>- Friend list<br>- Custom name<br>- Online gameplay</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Copy Lobby Code on Disconnect</td>
+<td>Copies the lobby code to clipboard when you disconnect (including being kicked)</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Spoof Date to April 1<sup>st</sup></td>
+<td>Forces the april fools update</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modes">Modes 💿<a class="headerlink" href="#modes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RGB Mode</td>
+<td>RGB GUI</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Stealth Mode</td>
+<td>Minimize risk of being kicked by anticheat</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Panic Mode</td>
+<td>Kill HyperMenu and restore normal Among Us GUI</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="config">Config 📃<a class="headerlink" href="#config" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reload Config</td>
+<td>Reload config file</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Save to Profile</td>
+<td>Save HyperMenu profile</td>
+<td>Button</td>
+<td></td>
+</tr>
+<tr>
+<td>Load from Profile</td>
+<td>Load HyperMenu Profile</td>
+<td>Button</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="settings">Settings ⚙️<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<h4 id="gui-settings">GUI Settings<a class="headerlink" href="#gui-settings" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu Keybind</td>
+<td>Change Menu Keybind</td>
+<td>Text Entry</td>
+<td>Delete</td>
+</tr>
+<tr>
+<td>Menu Color (HTML)</td>
+<td>Set menu color (use hex color code such as #FF0000)</td>
+<td>Text Entry</td>
+<td></td>
+</tr>
+<tr>
+<td>Open Menu on Mouse Position</td>
+<td>Open the menu on the position of your mouse when you press delete</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+<tr>
+<td>Auto-Load Profile on Startup</td>
+<td>Automatically load the HyperMenu profile when you start Among Us</td>
+<td>Toggle</td>
+<td>Off</td>
+</tr>
+</tbody>
+</table>
+<h4 id="spoofing-settings">Spoofing Settings<a class="headerlink" href="#spoofing-settings" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spoof Level</td>
+<td>Spoof your player level for other players (from 1 to 100000)</td>
+<td>Text Entry</td>
+<td></td>
+</tr>
+<tr>
+<td>Spoof Platform</td>
+<td>Spoof player platform. Use one from this <a href="https://skeld.js.org/enums/constant.Platform.html">list</a>.</td>
+<td>Text Entry</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="privacy-settings">Privacy Settings<a class="headerlink" href="#privacy-settings" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hide Device ID</td>
+<td>Toggle hardware ban prevention</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Disable Telemetry</td>
+<td>Prevent Among Us from collecting data from your game</td>
+<td>Toggle</td>
+<td>On</td>
+</tr>
+</tbody>
+</table>
+<h2 id="config-file">Config File<a class="headerlink" href="#config-file" title="Permanent link">&para;</a></h2>
+<p>You can change all of the following settings in <code>BepInEx/config/HyperMenu.cfg</code></p>
+<table>
+<thead>
+<tr>
+<th>Config</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GuestMode.GuestMode</td>
+<td>When enabled, a new guest account will generate every time you start the game<br><br>Allows you to bypass account bans and PUID detection</td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>GuestMode.FriendName</td>
+<td>The username that will be used when setting a friend code for your guest account<br><br><strong>IMPORTANT</strong>: <br>- Can only be used with GuestMode<br>- Needs to be ≤ 10 characters<br>- Cannot include special characters/discriminator (#1234)</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>GUI.Keybind</td>
+<td>Specifies the keyboard key that toggles the GUI on/off<br><br><strong>IMPORTANT</strong>: You may only use keycodes from this <a href="https://docs.unity3d.com/Packages/com.unity.tiny@0.16/api/Unity.Tiny.Input.KeyCode.html">list</a></td>
+<td>String</td>
+<td>Delete</td>
+</tr>
+<tr>
+<td>GUI.Color</td>
+<td>Sets the color of HyperMenu's GUI using HTML color codes</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>Privacy.HideDeviceId</td>
+<td>When enabled, it will hide your unique deviceId from Among Us<br><br>Could <strong>potentially</strong> help bypass hardware bans in the future</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>Privacy.NoTelemetry</td>
+<td>When enabled, it will stop Among Us from collecting analytics of your games using Unity Analytics and sending them to Innersloth</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>Spoofing.Level</td>
+<td>Sets a custom player level to display to others in online games, masking your real level<br><br><strong>IMPORTANT</strong>: Only integers between 0 and 4294967295 are valid. Decimal values are not accepted</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>Spoofing.Platform</td>
+<td>Sets a different gaming platform in online lobbies to disguise your actual platform<br><br><strong>IMPORTANT</strong>: You may only use platform names from this <a href="https://skeld.js.org/enums/constant.Platform.html">list</a></td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-relevant-features">Other relevant features<a class="headerlink" href="#other-relevant-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li>HyperMenu has a simple <strong>GUI</strong> that is easy to navigate and can be toggled using the <strong>DELETE</strong> key on your keyboard</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../releases/" class="md-footer__link md-footer__link--prev" aria-label="Previous: HyperMenu Releases">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                HyperMenu Releases
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 The authors
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.91a19a9e.min.js"></script>
+      
+    
+  </body>
+</html>
